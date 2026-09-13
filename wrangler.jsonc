@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "verodesk-1min-gateway",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-07-25",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "ONE_MIN_CHAT_API_URL": "https://api.1min.ai/api/chat-with-ai",
+    "ONE_MIN_API_URL": "https://api.1min.ai/api/features",
+    "ONE_MIN_ASSET_URL": "https://api.1min.ai/api/assets",
+    "ONE_MIN_MODELS_API_URL": "https://api.1min.ai/models",
+    "AUTH_TOKEN": "j'aimeliaetlescroquettespourchien"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "RATE_LIMIT_STORE","id": "2f891e41e0f249b29bdebd1b83affbeb"
+    },
+    {
+      "binding": "MODEL_CACHE","id": "6440390e071548b8b15bd7902cc4a154"
+    }
+  ]
+}
